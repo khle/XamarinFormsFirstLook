@@ -45,6 +45,11 @@ namespace XamarinFormsFirstLook
 			Navigation.PushAsync(new StylePage());
 		}
 
+		private void DynamicStyle_Clicked(object sender, EventArgs e)
+		{
+			Navigation.PushAsync(new DynamicStylePage());
+		}
+
 
 	}
 }

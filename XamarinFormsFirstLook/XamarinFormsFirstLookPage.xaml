@@ -28,6 +28,7 @@
 		    <Button Text="List1" Clicked="List1_Clicked"/>
 			<Button Text="Tabs" Clicked="Tab_Clicked"/>
 			<Button Text="Style" Clicked="Style_Clicked"/>
+			<Button Text="DynamicStyle" Clicked="DynamicStyle_Clicked"/>
 		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>
