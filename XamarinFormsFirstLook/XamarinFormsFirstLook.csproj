@@ -42,6 +42,18 @@
     <EmbeddedResource Include="Page\ListPage1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Page\TabContainer.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\TabPage1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\TabPage2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\TabPage3.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -65,6 +77,18 @@
     <Compile Include="ViewModel\ListPage1ViewModel.cs" />
     <Compile Include="Page\ListPage1.xaml.cs">
       <DependentUpon>ListPage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page\TabContainer.xaml.cs">
+      <DependentUpon>TabContainer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page\TabPage1.xaml.cs">
+      <DependentUpon>TabPage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page\TabPage2.xaml.cs">
+      <DependentUpon>TabPage2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page\TabPage3.xaml.cs">
+      <DependentUpon>TabPage3.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
