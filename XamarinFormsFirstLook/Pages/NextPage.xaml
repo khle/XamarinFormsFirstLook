@@ -4,9 +4,10 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	x:Class="XamarinFormsFirstLook.NextPage">
 	<ContentPage.Content>
-		<Label
+		<Button
 				Text="Hello I am Next Page"
 				VerticalOptions="Start"
-				HorizontalOptions="Center" />
+				HorizontalOptions="Center"
+				Clicked="GoBack_Clicked"/>
 	</ContentPage.Content>
 </ContentPage>

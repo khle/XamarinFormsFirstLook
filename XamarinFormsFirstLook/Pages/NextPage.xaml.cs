@@ -11,5 +11,10 @@ namespace XamarinFormsFirstLook
 		{
 			InitializeComponent();
 		}
+
+		private void GoBack_Clicked(object sender, EventArgs e)
+		{
+			Navigation.PopAsync();
+		}
 	}
 }
