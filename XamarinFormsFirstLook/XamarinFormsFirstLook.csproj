@@ -39,6 +39,9 @@
     <EmbeddedResource Include="Page\DataBindingPage2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Page\ListPage1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -59,6 +62,10 @@
       <DependentUpon>DataBindingPage2.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\DataBindingPage2ViewModel.cs" />
+    <Compile Include="ViewModel\ListPage1ViewModel.cs" />
+    <Compile Include="Page\ListPage1.xaml.cs">
+      <DependentUpon>ListPage1.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
