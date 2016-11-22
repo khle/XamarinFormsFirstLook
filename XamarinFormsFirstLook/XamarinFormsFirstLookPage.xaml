@@ -23,6 +23,7 @@
 				<Button Text="Submit" Clicked="Submit_Clicked"/>
 			</StackLayout>
 			<Button Text="Next Page" Clicked="NextPage_Clicked"/>
+			<Button Text="DataBinding1" Clicked="DataBinding1_Clicked"/>
 		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>
