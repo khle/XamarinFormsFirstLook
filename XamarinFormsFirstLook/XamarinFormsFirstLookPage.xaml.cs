@@ -25,6 +25,9 @@ namespace XamarinFormsFirstLook
 			Navigation.PushAsync(new DataBindingPage1());
 		}
 
-
+		private void DataBinding2_Clicked(object sender, EventArgs e)
+		{
+			Navigation.PushAsync(new DataBindingPage2());
+		}
 	}
 }

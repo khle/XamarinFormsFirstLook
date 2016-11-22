@@ -24,6 +24,7 @@
 			</StackLayout>
 			<Button Text="Next Page" Clicked="NextPage_Clicked"/>
 			<Button Text="DataBinding1" Clicked="DataBinding1_Clicked"/>
+			<Button Text="DataBinding2" Clicked="DataBinding2_Clicked"/>
 		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>

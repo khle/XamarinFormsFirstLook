@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="XamarinFormsFirstLook.DataBindingPage2">
+	<ContentPage.Content>
+		<StackLayout
+			Padding="16">
+			<Label
+				Text="{Binding FullName}"
+				Font="16" />
+			<Label
+				Text="{Binding Age}"
+				Font="14" />
+			<Label
+				Text="{Binding Password}"
+				Font="12" />
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
