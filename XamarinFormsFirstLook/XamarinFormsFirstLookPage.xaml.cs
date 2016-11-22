@@ -54,5 +54,10 @@ namespace XamarinFormsFirstLook
 	    {
 	        Navigation.PushAsync(new TriggerPage());
 	    }
+
+	    private void PubSub_Clicked(object sender, EventArgs e)
+	    {
+	        Navigation.PushAsync(new PubSubPage());
+	    }
 	}
 }

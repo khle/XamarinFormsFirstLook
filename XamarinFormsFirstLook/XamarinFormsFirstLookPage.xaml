@@ -49,6 +49,9 @@
 			    <Button
 			        Text="Trigger"
 			        Clicked="Trigger_Clicked" />
+			    <Button
+			        Text="Pub Sub"
+			        Clicked="PubSub_Clicked" />
 			</StackLayout>
 		</ScrollView>
 	</ContentPage.Content>

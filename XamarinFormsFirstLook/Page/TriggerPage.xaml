@@ -1,36 +1,44 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage
 	xmlns="http://xamarin.com/schemas/2014/forms"
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	xmlns:local="clr-namespace:XamarinFormsFirstLook;assembly=XamarinFormsFirstLook"
 	x:Class="XamarinFormsFirstLook.TriggerPage"
-Title="Trigger">
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <Style TargetType="Entry">
-                <Style.Triggers>
-                    <Trigger Property="Entry.IsFocused" Value="true" TargetType="Entry">
-                        <Setter Property="Entry.TextColor" Value="Blue"/>
-                    </Trigger>
-                </Style.Triggers>
-            </Style>
-
-        </ResourceDictionary>
-    </ContentPage.Resources>
-
-    <ContentPage.Content>
-
-        <StackLayout Padding="16">
-            <Entry Placeholder="Enter your first name"/>
-            <Entry Placeholder="Enter your last name"/>
-            <Entry TextColor="Black" Placeholder="Enter your age">
-                <Entry.Triggers>
-                    <EventTrigger Event="TextChanged">
-                        <local:EntryValidation/>
-                    </EventTrigger>
-                </Entry.Triggers>
-            </Entry>
-        </StackLayout>
-
-    </ContentPage.Content>
+	Title="Trigger">
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<Style
+				TargetType="Entry">
+				<Style.Triggers>
+					<Trigger
+						Property="Entry.IsFocused"
+						Value="true"
+						TargetType="Entry">
+						<Setter
+							Property="Entry.TextColor"
+							Value="Blue" />
+					</Trigger>
+				</Style.Triggers>
+			</Style>
+		</ResourceDictionary>
+	</ContentPage.Resources>
+	<ContentPage.Content>
+		<StackLayout
+			Padding="16">
+			<Entry
+				Placeholder="Enter your first name" />
+			<Entry
+				Placeholder="Enter your last name" />
+			<Entry
+				TextColor="Black"
+				Placeholder="Enter your age">
+				<Entry.Triggers>
+					<EventTrigger
+						Event="TextChanged">
+						<local:EntryValidation />
+					</EventTrigger>
+				</Entry.Triggers>
+			</Entry>
+		</StackLayout>
+	</ContentPage.Content>
 </ContentPage>
