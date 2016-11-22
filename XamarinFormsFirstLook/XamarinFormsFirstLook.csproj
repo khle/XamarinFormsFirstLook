@@ -60,11 +60,15 @@
     <EmbeddedResource Include="Page\DynamicStylePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Page\TriggerPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EntryValidation.cs" />
     <Compile Include="XamarinFormsFirstLookPage.xaml.cs">
       <DependentUpon>XamarinFormsFirstLookPage.xaml</DependentUpon>
     </Compile>
@@ -102,6 +106,7 @@
     <Compile Include="Page\DynamicStylePage.xaml.cs">
       <DependentUpon>DynamicStylePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Page\TriggerPage.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

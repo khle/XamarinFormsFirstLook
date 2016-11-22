@@ -4,31 +4,52 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	xmlns:local="clr-namespace:XamarinFormsFirstLook"
 	x:Class="XamarinFormsFirstLook.XamarinFormsFirstLookPage"
-		Title="Xamarin.Forms First Look">
+	Title="Xamarin.Forms First Look">
 	<ContentPage.Content>
-		<StackLayout
-			Padding="16">
-			<Label
-				Text="Welcome to Xamarin Forms!"
-				VerticalOptions="Start"
-				HorizontalOptions="Center" />
+		<ScrollView>
 			<StackLayout
-				Orientation="Horizontal"
-				Spacing="8">
+				Padding="16">
 				<Label
-					Text="Name"
-					VerticalOptions="Center" />
-				<Entry
-					Placeholder="Enter your name" />
-				<Button Text="Submit" Clicked="Submit_Clicked"/>
+					Text="Welcome to Xamarin Forms!"
+					VerticalOptions="Start"
+					HorizontalOptions="Center" />
+				<StackLayout
+					Orientation="Horizontal"
+					Spacing="8">
+					<Label
+						Text="Name"
+						VerticalOptions="Center" />
+					<Entry
+						Placeholder="Enter your name" />
+					<Button
+						Text="Submit"
+						Clicked="Submit_Clicked" />
+				</StackLayout>
+				<Button
+					Text="Next Page"
+					Clicked="NextPage_Clicked" />
+				<Button
+					Text="DataBinding1"
+					Clicked="DataBinding1_Clicked" />
+				<Button
+					Text="DataBinding2"
+					Clicked="DataBinding2_Clicked" />
+				<Button
+					Text="List1"
+					Clicked="List1_Clicked" />
+				<Button
+					Text="Tabs"
+					Clicked="Tab_Clicked" />
+				<Button
+					Text="Style"
+					Clicked="Style_Clicked" />
+				<Button
+					Text="DynamicStyle"
+					Clicked="DynamicStyle_Clicked" />
+			    <Button
+			        Text="Trigger"
+			        Clicked="Trigger_Clicked" />
 			</StackLayout>
-			<Button Text="Next Page" Clicked="NextPage_Clicked"/>
-			<Button Text="DataBinding1" Clicked="DataBinding1_Clicked"/>
-			<Button Text="DataBinding2" Clicked="DataBinding2_Clicked"/>
-		    <Button Text="List1" Clicked="List1_Clicked"/>
-			<Button Text="Tabs" Clicked="Tab_Clicked"/>
-			<Button Text="Style" Clicked="Style_Clicked"/>
-			<Button Text="DynamicStyle" Clicked="DynamicStyle_Clicked"/>
-		</StackLayout>
+		</ScrollView>
 	</ContentPage.Content>
 </ContentPage>
