@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using Xamarin.Forms;
 
 namespace XamarinFormsFirstLook
 {
@@ -7,6 +8,11 @@ namespace XamarinFormsFirstLook
 		public XamarinFormsFirstLookPage()
 		{
 			InitializeComponent();
+		}
+
+		private void Submit_Clicked(object sender, EventArgs e)
+		{
+			DisplayAlert("Greetings!", "Hello from Xamarin.Forms!", "OK");
 		}
 	}
 }
