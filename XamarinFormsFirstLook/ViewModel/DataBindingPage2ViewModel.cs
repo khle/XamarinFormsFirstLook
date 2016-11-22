@@ -1,5 +1,5 @@
 ﻿using System;
-using XamarinFormsFirstLook.Models;
+using XamarinFormsFirstLook.Model;
 
 namespace XamarinFormsFirstLook
 {

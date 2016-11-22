@@ -1,4 +1,4 @@
-﻿namespace XamarinFormsFirstLook.Models
+﻿namespace XamarinFormsFirstLook.Model
 {
 	public class User
 	{

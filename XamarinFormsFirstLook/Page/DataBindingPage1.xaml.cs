@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 using Xamarin.Forms;
-using XamarinFormsFirstLook.Models;
+using XamarinFormsFirstLook.Model;
 
 namespace XamarinFormsFirstLook
 {
