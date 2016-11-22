@@ -8,7 +8,7 @@ namespace XamarinFormsFirstLook
 		{
 			InitializeComponent();
 
-			MainPage = new XamarinFormsFirstLookPage();
+			MainPage = new NavigationPage(new XamarinFormsFirstLookPage());
 		}
 
 		protected override void OnStart()

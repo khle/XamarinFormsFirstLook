@@ -14,5 +14,10 @@ namespace XamarinFormsFirstLook
 		{
 			DisplayAlert("Greetings!", "Hello from Xamarin.Forms!", "OK");
 		}
+
+		private void NextPage_Clicked(object sender, EventArgs e)
+		{
+			Navigation.PushAsync(new NextPage());
+		}
 	}
 }
