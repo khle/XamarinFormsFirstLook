@@ -40,6 +40,11 @@ namespace XamarinFormsFirstLook
 			Navigation.PushAsync(new TabContainer());
 		}
 
+		private void Style_Clicked(object sender, EventArgs e)
+		{
+			Navigation.PushAsync(new StylePage());
+		}
+
 
 	}
 }

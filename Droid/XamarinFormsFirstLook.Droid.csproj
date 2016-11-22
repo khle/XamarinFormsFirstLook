@@ -37,6 +37,11 @@
     <WarningLevel>4</WarningLevel>
     <AndroidManagedSymbols>true</AndroidManagedSymbols>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <AndroidKeyStore>True</AndroidKeyStore>
+    <AndroidSigningKeyStore>/Users/shahab/Work/OSP/MyGithub/XamarinFormsFirstLook/Droid/xamarin_first_look_droid_key.jks</AndroidSigningKeyStore>
+    <AndroidSigningStorePass>4G5rI92w0c2</AndroidSigningStorePass>
+    <AndroidSigningKeyAlias>firstLookDroidKey</AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>M61hAIhRRFe</AndroidSigningKeyPass>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

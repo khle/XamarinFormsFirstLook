@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="XamarinFormsFirstLook.StylePage">
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<Style
+				x:Key="buttonStyle"
+				TargetType="Button">
+				<Setter
+					Property="HorizontalOptions"
+					Value="Center">
+				</Setter>
+				<Setter
+					Property="TextColor"
+					Value="Lime">
+				</Setter>
+				<Setter
+					Property="FontSize"
+					Value="20">
+				</Setter>
+			</Style>
+			<Style
+				TargetType="Label">
+				<Setter
+					Property="HorizontalOptions"
+					Value="Center">
+				</Setter>
+				<Setter
+					Property="TextColor"
+					Value="Blue">
+				</Setter>
+				<Setter
+					Property="FontSize"
+					Value="26">
+				</Setter>
+			</Style>
+			<Style
+				x:Key="baseStyle"
+				TargetType="View">
+				<Setter
+					Property="HorizontalOptions"
+					Value="Start">
+				</Setter>
+			</Style>
+			<Style
+				x:Key="entryStyle"
+				TargetType="Entry"
+				BasedOn="{StaticResource baseStyle}">
+				<Setter
+					Property="TextColor"
+					Value="Red">
+				</Setter>
+			</Style>
+		</ResourceDictionary>
+	</ContentPage.Resources>
+	<ContentPage.Content>
+		<StackLayout
+			Orientation="Vertical">
+			<Button
+				Text="Button 01"
+				Style="{StaticResource buttonStyle}">
+			</Button>
+			<Button
+				Text="Button 02">
+			</Button>
+			<Button
+				Text="Button 03"
+				BorderWidth="2">
+			</Button>
+			<Label
+				Text="Label 01">
+			</Label>
+			<Entry
+				Placeholder="Entry 01">
+			</Entry>
+			<Entry
+				Placeholder="Entry 02"
+				Style="{StaticResource entryStyle}">
+			</Entry>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
