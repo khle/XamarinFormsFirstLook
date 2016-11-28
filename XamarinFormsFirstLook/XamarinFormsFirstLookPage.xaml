@@ -61,6 +61,9 @@
 			    <Button
 			        Text="Custom Extension"
 			        Clicked="CustomExtension_Clicked" />
+			    <Button
+			        Text="Platform Service"
+			        Clicked="PlatformService_Clicked" />
 			</StackLayout>
 		</ScrollView>
 	</ContentPage.Content>

@@ -74,5 +74,10 @@ namespace XamarinFormsFirstLook
 	    {
 	        Navigation.PushAsync(new CustomMarkup());
 	    }
+
+	    private void PlatformService_Clicked(object sender, EventArgs e)
+	    {
+	        Navigation.PushAsync(new PlatformService());
+	    }
 	}
 }
