@@ -15,7 +15,7 @@ namespace XamarinFormsFirstLook
 			User user1 = DataBindingPage2ViewModel.GetUser();
 			User user2 = DataBindingPage2ViewModel.GetUser2();
 
-			dbp2VM = new DataBindingPage2ViewModel(user2);
+			dbp2VM = new DataBindingPage2ViewModel(user1);
 			BindingContext = dbp2VM;
 
 			InitializeComponent();
