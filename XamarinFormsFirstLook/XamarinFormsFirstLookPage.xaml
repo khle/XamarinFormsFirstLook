@@ -20,7 +20,8 @@
 						Text="Name"
 						VerticalOptions="Center" />
 					<Entry
-						Placeholder="Enter your name" />
+						Placeholder="Enter your name"
+						HorizontalOptions="FillAndExpand" />
 					<Button
 						Text="Submit"
 						Clicked="Submit_Clicked" />
@@ -46,24 +47,24 @@
 				<Button
 					Text="DynamicStyle"
 					Clicked="DynamicStyle_Clicked" />
-			    <Button
-			        Text="Trigger"
-			        Clicked="Trigger_Clicked" />
-			    <Button
-			        Text="Pub Sub"
-			        Clicked="PubSub_Clicked" />
-			    <Button
-			        Text="Custom Button"
-			        Clicked="CustomButton_Clicked" />
-			    <Button
-			        Text="Custom BoxView"
-			        Clicked="CustomBoxView_Clicked" />
-			    <Button
-			        Text="Custom Extension"
-			        Clicked="CustomExtension_Clicked" />
-			    <Button
-			        Text="Platform Service"
-			        Clicked="PlatformService_Clicked" />
+				<Button
+					Text="Trigger"
+					Clicked="Trigger_Clicked" />
+				<Button
+					Text="Pub Sub"
+					Clicked="PubSub_Clicked" />
+				<Button
+					Text="Custom Button"
+					Clicked="CustomButton_Clicked" />
+				<Button
+					Text="Custom BoxView"
+					Clicked="CustomBoxView_Clicked" />
+				<Button
+					Text="Custom Extension"
+					Clicked="CustomExtension_Clicked" />
+				<Button
+					Text="Platform Service"
+					Clicked="PlatformService_Clicked" />
 			</StackLayout>
 		</ScrollView>
 	</ContentPage.Content>
