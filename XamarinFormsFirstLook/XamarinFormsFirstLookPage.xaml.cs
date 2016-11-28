@@ -64,5 +64,10 @@ namespace XamarinFormsFirstLook
 	    {
 	        Navigation.PushAsync(new CustomButton());
 	    }
+
+	    private void CustomBoxView_Clicked(object sender, EventArgs e)
+	    {
+	        Navigation.PushAsync(new CustomBoxView());
+	    }
 	}
 }

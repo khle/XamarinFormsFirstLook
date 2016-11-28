@@ -55,6 +55,9 @@
 			    <Button
 			        Text="Custom Button"
 			        Clicked="CustomButton_Clicked" />
+			    <Button
+			        Text="Custom BoxView"
+			        Clicked="CustomBoxView_Clicked" />
 			</StackLayout>
 		</ScrollView>
 	</ContentPage.Content>

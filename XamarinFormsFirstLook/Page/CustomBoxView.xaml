@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="XamarinFormsFirstLook.CustomBoxView"
+	xmlns:local="clr-namespace:XamarinFormsFirstLook;assembly=XamarinFormsFirstLook">
+	<ContentPage.Content>
+		<StackLayout
+			Padding="16">
+			<local:GLabBoxView
+				WidthRequest="160"
+				HeightRequest="160"
+				Color="Accent"
+				BorderColor="Green"
+				BindingContext="{x:Reference Name=SliderThickNess}"
+				BorderThickness="{Binding Path=Value}" />
+			<Label
+				BindingContext="{x:Reference Name=SliderThickNess}"
+				Text="{Binding Path=Value}" />
+			<Slider
+				x:Name="SliderThickNess"
+				Minimum="0"
+				Maximum="30" />
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

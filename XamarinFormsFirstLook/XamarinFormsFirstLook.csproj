@@ -72,6 +72,9 @@
     <EmbeddedResource Include="Page\CustomButton.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Page\CustomBoxView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -122,6 +125,10 @@
     <Compile Include="Page\CustomButton.xaml.cs">
       <DependentUpon>CustomButton.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Page\CustomBoxView.xaml.cs">
+      <DependentUpon>CustomBoxView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\GLabBoxView.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
