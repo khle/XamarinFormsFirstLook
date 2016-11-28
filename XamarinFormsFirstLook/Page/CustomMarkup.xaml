@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="XamarinFormsFirstLook.CustomMarkup"
+	xmlns:local="clr-namespace:XamarinFormsFirstLook.Extension;assembly=XamarinFormsFirstLook">
+	<ContentPage.Content>
+		<StackLayout
+			Padding="16">
+			<Label
+				Text="Hello World"
+				FontSize="30"
+				TextColor="{local:RGBExtension Red=105, Green=205, Blue=180}" />
+			<Label
+				Text="Hello Xamarin"
+				FontSize="36"
+				TextColor="{local:RGBExtension Red=150, Green=250, Blue=0}"
+				BackgroundColor="{local:RGBExtension Red=50, Green=60, Blue=70}" />
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

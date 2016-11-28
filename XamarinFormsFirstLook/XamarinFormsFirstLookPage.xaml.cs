@@ -69,5 +69,10 @@ namespace XamarinFormsFirstLook
 	    {
 	        Navigation.PushAsync(new CustomBoxView());
 	    }
+
+	    private void CustomExtension_Clicked(object sender, EventArgs e)
+	    {
+	        Navigation.PushAsync(new CustomMarkup());
+	    }
 	}
 }

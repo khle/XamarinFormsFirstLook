@@ -75,12 +75,19 @@
     <EmbeddedResource Include="Page\CustomBoxView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Page\CustomMarkup.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\PlatformService.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="EntryValidation.cs" />
+    <Compile Include="Extension\RGBExtension.cs" />
     <Compile Include="XamarinFormsFirstLookPage.xaml.cs">
       <DependentUpon>XamarinFormsFirstLookPage.xaml</DependentUpon>
     </Compile>
@@ -129,6 +136,12 @@
       <DependentUpon>CustomBoxView.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\GLabBoxView.cs" />
+    <Compile Include="Page\CustomMarkup.xaml.cs">
+      <DependentUpon>CustomMarkup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page\PlatformService.xaml.cs">
+      <DependentUpon>PlatformService.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
@@ -148,6 +161,7 @@
     <Folder Include="Page\" />
     <Folder Include="ViewModel\" />
     <Folder Include="UI\" />
+    <Folder Include="Extension\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.3.1.114\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.1.114\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
