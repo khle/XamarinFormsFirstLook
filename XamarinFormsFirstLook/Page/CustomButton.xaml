@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="XamarinFormsFirstLook.CustomButton"
+		xmlns:local="clr-namespace:XamarinFormsFirstLook;assembly=XamarinFormsFirstLook">
+	<ContentPage.Content>
+		<StackLayout Padding="16">
+               <Entry Placeholder="Enter your name"/>
+            <local:GLabButton Text="Click me!" TextColor="Navy" FontSize="16" Clicked="OnClickHandler"/>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

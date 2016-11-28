@@ -59,5 +59,10 @@ namespace XamarinFormsFirstLook
 	    {
 	        Navigation.PushAsync(new PubSubPage());
 	    }
+
+	    private void CustomButton_Clicked(object sender, EventArgs e)
+	    {
+	        Navigation.PushAsync(new CustomButton());
+	    }
 	}
 }

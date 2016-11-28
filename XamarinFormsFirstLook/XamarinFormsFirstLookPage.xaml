@@ -52,6 +52,9 @@
 			    <Button
 			        Text="Pub Sub"
 			        Clicked="PubSub_Clicked" />
+			    <Button
+			        Text="Custom Button"
+			        Clicked="CustomButton_Clicked" />
 			</StackLayout>
 		</ScrollView>
 	</ContentPage.Content>
