@@ -7,15 +7,13 @@ namespace XamarinFormsFirstLook
 {
 	public partial class PubPage : ContentPage
 	{
-		public PubPage()
-		{
+		public PubPage() {
 			InitializeComponent();
 		}
 
-	    private void Button_OnClicked(object sender, EventArgs e)
-	    {
-            MessagingCenter.Send<PubSubPage>(new PubSubPage(), "fireEvent");
-	        Navigation.PopAsync();
-	    }
+		private void Button_OnClicked(object sender, EventArgs e) {
+			MessagingCenter.Send<PubSubPage>(new PubSubPage(), "fireEvent");
+			Navigation.PopAsync();
+		}
 	}
 }

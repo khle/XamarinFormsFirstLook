@@ -7,8 +7,7 @@ namespace XamarinFormsFirstLook
 {
 	public partial class CustomMarkup : ContentPage
 	{
-		public CustomMarkup()
-		{
+		public CustomMarkup() {
 			InitializeComponent();
 		}
 	}

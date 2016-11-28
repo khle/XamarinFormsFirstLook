@@ -7,8 +7,7 @@ namespace XamarinFormsFirstLook
 {
 	public partial class TriggerPage : ContentPage
 	{
-		public TriggerPage()
-		{
+		public TriggerPage() {
 			InitializeComponent();
 		}
 	}

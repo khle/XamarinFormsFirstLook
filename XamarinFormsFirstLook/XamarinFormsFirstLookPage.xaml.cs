@@ -30,7 +30,12 @@ namespace XamarinFormsFirstLook
 			Navigation.PushAsync(new DataBindingPage2());
 		}
 
-		private void List1_Clicked(object sender, EventArgs e)
+	    private void DataBinding3_Clicked(object sender, EventArgs e)
+	    {
+	        throw new NotImplementedException();
+	    }
+
+	    private void List1_Clicked(object sender, EventArgs e)
 		{
 			Navigation.PushAsync(new ListPage1());
 		}

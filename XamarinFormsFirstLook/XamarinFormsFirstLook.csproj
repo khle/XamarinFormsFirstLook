@@ -60,15 +60,6 @@
     <EmbeddedResource Include="Page\DynamicStylePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Page\TriggerPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Page\PubSubPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Page\PubPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Include="Page\CustomButton.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -79,6 +70,15 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="Page\PlatformService.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\PubPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\PubSubPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\TriggerPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
@@ -126,9 +126,6 @@
     <Compile Include="Page\DynamicStylePage.xaml.cs">
       <DependentUpon>DynamicStylePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Page\TriggerPage.xaml.cs" />
-    <Compile Include="Page\PubSubPage.xaml.cs" />
-    <Compile Include="Page\PubPage.xaml.cs" />
     <Compile Include="UI\GLabButton.cs" />
     <Compile Include="Page\CustomButton.xaml.cs">
       <DependentUpon>CustomButton.xaml</DependentUpon>
@@ -143,8 +140,19 @@
     <Compile Include="Page\PlatformService.xaml.cs">
       <DependentUpon>PlatformService.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Page\PubPage.xaml.cs">
+      <DependentUpon>PubPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page\PubSubPage.xaml.cs">
+      <DependentUpon>PubSubPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page\TriggerPage.xaml.cs">
+      <DependentUpon>TriggerPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Model" />
+    <Folder Include="Page" />
     <Folder Include="Page\" />
     <Folder Include="ViewModel\" />
     <Folder Include="UI\" />

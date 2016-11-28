@@ -35,7 +35,10 @@
 				<Button
 					Text="DataBinding2"
 					Clicked="DataBinding2_Clicked" />
-				<Button
+			    <Button
+			        Text="DataBinding3"
+			        Clicked="DataBinding3_Clicked" />
+			    <Button
 					Text="List1"
 					Clicked="List1_Clicked" />
 				<Button

@@ -3,12 +3,12 @@
 	xmlns="http://xamarin.com/schemas/2014/forms"
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	x:Class="XamarinFormsFirstLook.NextPage"
-    Title="Next">
+	Title="Next">
 	<ContentPage.Content>
 		<Button
-				Text="Hello I am Next Page"
-				VerticalOptions="Start"
-				HorizontalOptions="Center"
-				Clicked="GoBack_Clicked"/>
+			Text="Hello I am Next Page"
+			VerticalOptions="Start"
+			HorizontalOptions="Center"
+			Clicked="GoBack_Clicked" />
 	</ContentPage.Content>
 </ContentPage>

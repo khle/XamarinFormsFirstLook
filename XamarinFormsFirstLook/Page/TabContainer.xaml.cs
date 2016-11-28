@@ -7,8 +7,7 @@ namespace XamarinFormsFirstLook
 {
 	public partial class TabContainer : TabbedPage
 	{
-		public TabContainer()
-		{
+		public TabContainer() {
 			InitializeComponent();
 		}
 	}

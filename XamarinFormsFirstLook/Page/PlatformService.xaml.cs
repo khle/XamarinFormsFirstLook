@@ -8,14 +8,12 @@ namespace XamarinFormsFirstLook
 {
 	public partial class PlatformService : ContentPage
 	{
-		public PlatformService()
-		{
+		public PlatformService() {
 			InitializeComponent();
 		}
 
-	    private void onClickTwitter(object sender, EventArgs e)
-	    {
-                DependencyService.Get<ITwitter>().SendTweet("Hello world!!");
-	    }
+		private void onClickTwitter(object sender, EventArgs e) {
+			DependencyService.Get<ITwitter>().SendTweet("Hello world!!");
+		}
 	}
 }

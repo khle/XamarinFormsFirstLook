@@ -10,16 +10,14 @@ namespace XamarinFormsFirstLook
 	{
 		private ListPage1ViewModel vm;
 
-		public ListPage1()
-		{
+		public ListPage1() {
 
 			InitializeComponent();
 			vm = new ListPage1ViewModel();
 			UserListView.ItemsSource = vm.Users();
 		}
 
-		private void ListView_OnItemSelected(object sender, SelectedItemChangedEventArgs e)
-		{
+		private void ListView_OnItemSelected(object sender, SelectedItemChangedEventArgs e) {
 			User user = e.SelectedItem as User;
 			DisplayAlert("User selected", user.FirstName, "OK");
 		}

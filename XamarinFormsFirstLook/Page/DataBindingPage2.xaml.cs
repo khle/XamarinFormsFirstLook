@@ -10,8 +10,7 @@ namespace XamarinFormsFirstLook
 	{
 		DataBindingPage2ViewModel dbp2VM;
 
-		public DataBindingPage2()
-		{
+		public DataBindingPage2() {
 			User user1 = DataBindingPage2ViewModel.GetUser();
 			User user2 = DataBindingPage2ViewModel.GetUser2();
 

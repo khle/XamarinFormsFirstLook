@@ -7,8 +7,7 @@ namespace XamarinFormsFirstLook
 {
 	public partial class CustomBoxView : ContentPage
 	{
-		public CustomBoxView()
-		{
+		public CustomBoxView() {
 			InitializeComponent();
 		}
 	}

@@ -7,13 +7,11 @@ namespace XamarinFormsFirstLook
 {
 	public partial class NextPage : ContentPage
 	{
-		public NextPage()
-		{
+		public NextPage() {
 			InitializeComponent();
 		}
 
-		private void GoBack_Clicked(object sender, EventArgs e)
-		{
+		private void GoBack_Clicked(object sender, EventArgs e) {
 			Navigation.PopAsync();
 		}
 	}

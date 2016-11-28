@@ -7,8 +7,7 @@ namespace XamarinFormsFirstLook
 {
 	public partial class StylePage : ContentPage
 	{
-		public StylePage()
-		{
+		public StylePage() {
 			InitializeComponent();
 		}
 	}

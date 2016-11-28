@@ -4,6 +4,9 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	x:Class="XamarinFormsFirstLook.PlatformService">
 	<ContentPage.Content>
-        <Button Text="Twitter" Clicked="onClickTwitter"></Button>
+		<Button
+			Text="Twitter"
+			Clicked="onClickTwitter">
+		</Button>
 	</ContentPage.Content>
 </ContentPage>

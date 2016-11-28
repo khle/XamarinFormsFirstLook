@@ -5,9 +5,15 @@
 	x:Class="XamarinFormsFirstLook.CustomButton"
 	xmlns:local="clr-namespace:XamarinFormsFirstLook;assembly=XamarinFormsFirstLook">
 	<ContentPage.Content>
-		<StackLayout Padding="16">
-               <Entry Placeholder="Enter your name"/>
-            <local:GLabButton Text="Click me!" TextColor="Navy" FontSize="16" Clicked="OnClickHandler"/>
+		<StackLayout
+			Padding="16">
+			<Entry
+				Placeholder="Enter your name" />
+			<local:GLabButton
+				Text="Click me!"
+				TextColor="Navy"
+				FontSize="16"
+				Clicked="OnClickHandler" />
 		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>

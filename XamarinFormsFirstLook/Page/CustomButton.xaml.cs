@@ -7,14 +7,12 @@ namespace XamarinFormsFirstLook
 {
 	public partial class CustomButton : ContentPage
 	{
-		public CustomButton()
-		{
+		public CustomButton() {
 			InitializeComponent();
 		}
 
-	    private void OnClickHandler(object sender, EventArgs e)
-	    {
-	        DisplayAlert("Hello", "Nice Button", "OK");
-	    }
+		private void OnClickHandler(object sender, EventArgs e) {
+			DisplayAlert("Hello", "Nice Button", "OK");
+		}
 	}
 }
