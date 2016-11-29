@@ -87,6 +87,9 @@
     <EmbeddedResource Include="Page\ListPage3.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Page\ListPage4.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -98,6 +101,7 @@
     <Compile Include="Extension\RGBExtension.cs" />
     <Compile Include="Model\Contact.cs" />
     <Compile Include="Model\Grouping.cs" />
+    <Compile Include="ViewModel\ListPage4ViewModel.cs" />
     <Compile Include="XamarinFormsFirstLookPage.xaml.cs">
       <DependentUpon>XamarinFormsFirstLookPage.xaml</DependentUpon>
     </Compile>
@@ -163,6 +167,9 @@
     </Compile>
     <Compile Include="Page\ListPage3.xaml.cs">
       <DependentUpon>ListPage3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page\ListPage4.xaml.cs">
+      <DependentUpon>ListPage4.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

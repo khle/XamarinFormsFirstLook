@@ -94,5 +94,10 @@ namespace XamarinFormsFirstLook
 	    {
 	        Navigation.PushAsync(new ListPage3());
 	    }
+
+	    private void List4_Clicked(object sender, EventArgs e)
+	    {
+	        Navigation.PushAsync(new ListPage4());
+	    }
 	}
 }

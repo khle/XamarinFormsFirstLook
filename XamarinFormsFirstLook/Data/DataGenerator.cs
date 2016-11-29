@@ -31,7 +31,7 @@ namespace XamarinFormsFirstLook.Data
                 contact.FirstName = FirstNames [i];
                 contact.LastName = LastNames [i];
                 contact.Email = FirstNames [i] + "@gmail.com";
-                contact.IsFavorite = random.Next(FirstNames.Count) % 2 == 0;
+                contact.IsFavorite = ((random.Next(FirstNames.Count) % 2) == 0);
                 contacts.Add(contact);
             }
             return  contacts;
