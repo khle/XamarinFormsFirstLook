@@ -68,6 +68,9 @@
 				<Button
 					Text="Platform Service"
 					Clicked="PlatformService_Clicked" />
+			    <Button
+			        Text="List2"
+			        Clicked="List2_Clicked" />
 			</StackLayout>
 		</ScrollView>
 	</ContentPage.Content>
