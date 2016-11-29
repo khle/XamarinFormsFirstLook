@@ -90,6 +90,9 @@
     <EmbeddedResource Include="Page\ListPage4.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Page\RESTPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -101,7 +104,10 @@
     <Compile Include="Extension\RGBExtension.cs" />
     <Compile Include="Model\Contact.cs" />
     <Compile Include="Model\Grouping.cs" />
+    <Compile Include="Model\WeatherObservation.cs" />
+    <Compile Include="Model\WeatherResult.cs" />
     <Compile Include="ViewModel\ListPage4ViewModel.cs" />
+    <Compile Include="ViewModel\RESTViewModel.cs" />
     <Compile Include="XamarinFormsFirstLookPage.xaml.cs">
       <DependentUpon>XamarinFormsFirstLookPage.xaml</DependentUpon>
     </Compile>
@@ -171,6 +177,9 @@
     <Compile Include="Page\ListPage4.xaml.cs">
       <DependentUpon>ListPage4.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Page\RESTPage.xaml.cs">
+      <DependentUpon>RESTPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Page" />
@@ -180,7 +189,19 @@
     <Folder Include="Extension\" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Collections" />
+    <Reference Include="System.Net.Http, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
     <Reference Include="System.Runtime" />
     <Reference Include="System.Runtime.Extensions" />
     <Reference Include="Xamarin.Forms.Core">

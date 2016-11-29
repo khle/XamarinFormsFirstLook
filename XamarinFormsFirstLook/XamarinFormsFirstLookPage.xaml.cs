@@ -99,5 +99,10 @@ namespace XamarinFormsFirstLook
 	    {
 	        Navigation.PushAsync(new ListPage4());
 	    }
+
+	    private void RESTAPI_Clicked(object sender, EventArgs e)
+	    {
+	        Navigation.PushAsync(new RESTPage());
+	    }
 	}
 }
