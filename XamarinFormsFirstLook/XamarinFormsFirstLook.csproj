@@ -84,6 +84,9 @@
     <EmbeddedResource Include="Page\ListPage2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Page\ListPage3.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -94,6 +97,7 @@
     <Compile Include="Extension\ITwitter.cs" />
     <Compile Include="Extension\RGBExtension.cs" />
     <Compile Include="Model\Contact.cs" />
+    <Compile Include="Model\Grouping.cs" />
     <Compile Include="XamarinFormsFirstLookPage.xaml.cs">
       <DependentUpon>XamarinFormsFirstLookPage.xaml</DependentUpon>
     </Compile>
@@ -156,6 +160,9 @@
     </Compile>
     <Compile Include="Page\ListPage2.xaml.cs">
       <DependentUpon>ListPage2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page\ListPage3.xaml.cs">
+      <DependentUpon>ListPage3.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

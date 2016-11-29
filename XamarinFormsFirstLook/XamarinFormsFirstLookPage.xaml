@@ -71,6 +71,9 @@
 			    <Button
 			        Text="List2"
 			        Clicked="List2_Clicked" />
+			    <Button
+			        Text="List3"
+			        Clicked="List3_Clicked" />
 			</StackLayout>
 		</ScrollView>
 	</ContentPage.Content>

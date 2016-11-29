@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Collections.ObjectModel;
 using XamarinFormsFirstLook.Model;
 
 namespace XamarinFormsFirstLook.Data
@@ -26,7 +26,23 @@ namespace XamarinFormsFirstLook.Data
             var random = new Random();
             List<Contact> contacts = new List<Contact>();
 
-            for (int i = 0; i < 20; i++) {
+            for (int i = 0; i < 25; i++) {
+                Contact contact = new Contact();
+                contact.FirstName = FirstNames [i];
+                contact.LastName = LastNames [i];
+                contact.Email = FirstNames [i] + "@gmail.com";
+                contact.IsFavorite = random.Next(FirstNames.Count) % 2 == 0;
+                contacts.Add(contact);
+            }
+            return  contacts;
+        }
+
+        public static ObservableCollection<Contact> GetObservableContacts() {
+
+            var random = new Random();
+            var contacts = new ObservableCollection<Contact>();
+
+            for (int i = 0; i < 25; i++) {
                 Contact contact = new Contact();
                 contact.FirstName = FirstNames [i];
                 contact.LastName = LastNames [i];
