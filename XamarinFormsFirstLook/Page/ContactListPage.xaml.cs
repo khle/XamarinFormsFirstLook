@@ -12,18 +12,18 @@ namespace XamarinFormsFirstLook
 			InitializeComponent();
 		}
 
-	    public void OnItemTapped(object o, ItemTappedEventArgs e) {
-	        var contact = e.Item as Contact;
-	        Navigation.PushAsync(new ContactEntryPage(contact.ID));
-	    }
+		public void OnItemTapped(object o, ItemTappedEventArgs e) {
+			var contact = e.Item as Contact;
+			Navigation.PushAsync(new ContactEntryPage(contact.ID));
+		}
 
-	    protected override void OnAppearing() {
-	        base.OnAppearing();
-	        ContactList.ItemsSource = App.Database.GetContacts();
-	    }
+		protected override void OnAppearing() {
+			base.OnAppearing();
+			ContactList.ItemsSource = App.Database.GetContacts();
+		}
 
-	    protected void OnNewEntry(object o, EventArgs e) {
-	        Navigation.PushAsync(new ContactEntryPage());
-	    }
+		protected void OnNewEntry(object o, EventArgs e) {
+			Navigation.PushAsync(new ContactEntryPage());
+		}
 	}
 }
