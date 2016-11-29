@@ -104,5 +104,10 @@ namespace XamarinFormsFirstLook
 	    {
 	        Navigation.PushAsync(new RESTPage());
 	    }
+
+	    private void SQLiteDatabase_Clicked(object sender, EventArgs e)
+	    {
+	        Navigation.PushAsync(new ContactListPage());
+	    }
 	}
 }

@@ -80,6 +80,9 @@
 			    <Button
 			        Text="REST API"
 			        Clicked="RESTAPI_Clicked" />
+			    <Button
+			        Text="SQLite Database"
+			        Clicked="SQLiteDatabase_Clicked" />
 			</StackLayout>
 		</ScrollView>
 	</ContentPage.Content>

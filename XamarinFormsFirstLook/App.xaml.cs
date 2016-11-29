@@ -1,4 +1,5 @@
 ﻿using Xamarin.Forms;
+using XamarinFormsFirstLook.Data;
 
 namespace XamarinFormsFirstLook
 {
@@ -11,7 +12,18 @@ namespace XamarinFormsFirstLook
 			MainPage = new NavigationPage(new XamarinFormsFirstLookPage());
 		}
 
-		protected override void OnStart()
+	    static ContactDatabase database;
+
+	    public static ContactDatabase Database {
+	        get {
+	            if (database == null) {
+	                database = new ContactDatabase();
+	            }
+	            return database;
+	        }
+	    }
+
+	    protected override void OnStart()
 		{
 			// Handle when your app starts
 		}
